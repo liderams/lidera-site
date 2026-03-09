@@ -1,35 +1,184 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lidera Site</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
-        .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; }
-        .service { border: 1px solid #eaeaea; padding: 20px; border-radius: 8px; text-align: center; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lidera Consulting</title>
+  <meta name="description" content="Lidera provides product development, program management, and business transformation support for startups to global enterprises.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Lidera</h1>
-        <p>Your partner in excellence</p>
-    </header>
-    <main>
-        <section>
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service">Business Management</div>
-                <div class="service">Program Management Office</div>
-                <div class="service">Program Management</div>
-                <div class="service">Design Auditing</div>
-                <div class="service">Team Development</div>
-                <div class="service">Manager Coaching</div>
-                <div class="service">Supply Chain Support</div>
-                <div class="service">Product Design Support</div>
-            </div>
-        </section>
-    </main>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Lidera</div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-primary">Book a Consult</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container grid-2">
+        <div>
+          <h1>Expert product development support — when you need it and within your budget.</h1>
+          <p class="lead">
+            Lidera empowers companies — from early‑stage startups to global enterprises — with the high‑quality support they need to move faster, solve complex challenges, and build exceptional products.
+          </p>
+          <div class="cta-group">
+            <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-accent" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#4F46E5"/>
+                <stop offset="100%" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="90" fill="url(#g)" opacity="0.15"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p>Success at Lidera means connecting you with the right expertise at the right time, backed by services that fit your goals and your budget.</p>
+        <p>Our team brings decades of real‑world experience in product development across multiple industries. We’ve faced — and solved — the same challenges you’re navigating now. Along the way, we’ve built deep technical skills, strategic insight, and a trusted network of specialists we can tap into when a project demands it.</p>
+        <p>Whether you need hands‑on support, strategic guidance, or introductions to the right external partners, Lidera is committed to helping you achieve measurable, meaningful progress.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-kicker">From early‑stage startups to global corporations, we help teams move faster, solve complex challenges, and deliver results.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Business Management</h3>
+            <ul>
+              <li>Organizational change management</li>
+              <li>M&amp;A risk reduction &amp; integration support</li>
+              <li>Protect core competency &amp; IP during divestitures</li>
+              <li>CRM / ERP / PDM selection &amp; implementation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Program Management Office (PMO)</h3>
+            <ul>
+              <li>Right‑sized product development processes</li>
+              <li>Cross‑functional collaboration &amp; reporting</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Program Management</h3>
+            <ul>
+              <li>Long‑term growth strategy</li>
+              <li>3–10 year project &amp; portfolio roadmaps</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Design Auditing</h3>
+            <ul>
+              <li>Reduce tooling rework &amp; launch delays</li>
+              <li>Improve durability &amp; manufacturability</li>
+              <li>Enhance aesthetics (injection molding &amp; sheet metal)</li>
+              <li>Reduce part cost through optimization</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Team Development</h3>
+            <ul>
+              <li>Identify strategic skillsets</li>
+              <li>Increase new‑hire success</li>
+              <li>Upskill existing teams</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Manager Coaching</h3>
+            <ul>
+              <li>Improve team engagement</li>
+              <li>Strengthen decision‑making</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Supply Chain Support</h3>
+            <ul>
+              <li>Vendor identification (local &amp; low‑cost regions)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Product Design Support</h3>
+            <ul>
+              <li>Fill short‑ and long‑term skill gaps</li>
+              <li>Augment teams to accelerate execution</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Let’s talk about your goals</h2>
+          <p>Tell us what you’re working on and where you need momentum. We’ll propose the most effective way to help — hands‑on support, strategic guidance, or introductions to the right partners.</p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:info@lideraconsulting.com">info@lideraconsulting.com</a></li>
+            <li>LinkedIn: <a href="#" aria-label="Lidera on LinkedIn">Your Company Page</a></li>
+          </ul>
+        </div>
+
+        <!-- Replace the action URL with your Formspree endpoint -->
+        <form class="contact-card" action="https://formspree.io/f/your-id" method="POST">
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Work email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>How can we help?</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Send</button>
+          <p class="form-note">We use a secure third‑party form service. Please avoid sending sensitive information.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 Lidera. All rights reserved.</div>
+      <nav class="foot-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
