@@ -29,7 +29,10 @@ img{max-width:100%;display:block}
   font-weight: 800;      /* Keep it bold */
   letter-spacing:.5px
   text-decoration: none; /* Remove underline */
-  color: var(--ink);     /* Keep your theme color */
+  /*color: var(--ink);     /* Keep your theme color */ */
+}
+.brand:hover {
+  color: var(--brand);   /* or white if header is dark */
 }
 .nav a{margin-left:16px;color:var(--ink);text-decoration:none}
 .nav .btn{margin-left:24px}
