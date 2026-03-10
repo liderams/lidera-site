@@ -1,4 +1,13 @@
 
+
+/* Prevent flash of default link styling */
+.brand a {
+  text-decoration: none !important;
+  font-weight: 800 !important;
+  color: var(--ink) !important;
+}
+
+
 /* Base */
 :root{
   --bg:#0b1020; /* dark gradient base for hero backdrop via overlay */
