@@ -51,7 +51,7 @@ img{max-width:100%;display:block}
 
 /* Buttons */
 .btn{display:inline-block;border-radius:10px;padding:10px 14px;text-decoration:none}
-.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff}
+.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff !important}
 .btn-secondary{border:1px solid #cbd5e1;color:var(--ink)}
 .btn-block{width:100%;text-align:center}
 
