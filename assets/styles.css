@@ -98,22 +98,40 @@ img{max-width:100%;display:block}
   }
 
   /* Space out nav items so they are easy to tap */
-  .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-  }
+  /*.nav {
+  /*  display: flex;
+  /*  flex-direction: column;
+  /*  gap: 12px;
+  /*  width: 100%;
+  /*}
 
-  .nav a {
-    font-size: 1.1rem;
-    padding: 8px 0;
-  }
+  /*.nav a {
+  /*  font-size: 1.1rem;
+  /*  padding: 8px 0;
+  /*}
 
   /* Full‑width button for better tapping */
   .nav .btn-primary {
     width: 100%;
     text-align: center;
   }
-}
 
+  /* Hide About + Services in mobile header */
+  .nav a:not(.btn-primary) {
+    display: none;
+  }
+
+  /* Make Book a Consult full-width and tap-friendly */
+  .nav .btn-primary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Stack brand and button vertically */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
