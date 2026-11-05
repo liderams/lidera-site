@@ -3,120 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Lidera | Executive Leadership, Business Performance &amp; AI Implementation</title>
-
-  <meta
-    name="description"
-    content="Lidera helps businesses improve growth, profitability, and execution through fractional executive leadership, practical AI workflows, and hands-on implementation."
-  >
-
+  <title>Lidera | Fractional Leadership, Business Performance &amp; AI Implementation</title>
+  <meta name="description" content="Lidera helps businesses improve growth, profitability, and execution through fractional executive leadership and hands-on AI implementation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
-
   <style>
-    /* Layout additions for this version of the page */
-    .lidera-pillars {
+    body.lidera-page { margin: 0; width: 100%; max-width: none; }
+    .lidera-page .container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
+      padding-inline: clamp(16px, 4vw, 64px);
+    }
+    .lidera-page .container.narrow { max-width: 900px; }
+    .lidera-page .hero > .container.grid-2,
+    .lidera-page #about > .container.lidera-about,
+    .lidera-page .lidera-pillars,
+    .lidera-page .lidera-results {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: minmax(0, 1fr);
       gap: 24px;
     }
-
-    .lidera-pillars .card {
-      min-width: 0;
-    }
-
-    .lidera-about {
-      display: grid;
-      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-      align-items: center;
-      gap: 48px;
-    }
-
-    .lidera-photo {
-      margin: 0;
-      width: 100%;
-      max-width: 380px;
-      justify-self: end;
-    }
-
-    .lidera-photo img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-    }
-
-    .lidera-photo figcaption {
-      margin-top: 12px;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .lidera-results {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-    }
-
-    .lidera-contact {
-      max-width: 780px;
-    }
-
-    .lidera-contact .cta-group {
-      margin: 24px 0;
-    }
-
-    .hero-logo {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .contact-list a {
-      overflow-wrap: anywhere;
-    }
+    .lidera-page .hero-logo { max-width: 100%; height: auto; }
+    .lidera-photo { margin: 0; width: 100%; max-width: 380px; }
+    .lidera-photo img { display: block; width: 100%; height: auto; border-radius: 16px; }
+    .lidera-photo figcaption { margin-top: 12px; font-size: .95rem; }
+    .lidera-contact { max-width: 780px; }
+    .lidera-contact .cta-group { margin-block: 24px; }
+    .lidera-page .contact-list a { overflow-wrap: anywhere; }
 
     @media (max-width: 800px) {
-      .lidera-about {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-
-      .lidera-photo {
-        justify-self: start;
-        max-width: 340px;
-      }
-
-      .header-inner,
-      .nav {
-        flex-wrap: wrap;
-        gap: 16px;
-      }
+      .lidera-page .header-inner, .lidera-page .nav { flex-wrap: wrap; gap: 16px; }
     }
 
-    @media (max-width: 600px) {
-      .lidera-pillars,
-      .lidera-results {
-        grid-template-columns: 1fr;
+    @media (min-width: 801px) {
+      .lidera-page .hero > .container.grid-2,
+      .lidera-page #about > .container.lidera-about {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        align-items: center;
+        gap: clamp(24px, 4vw, 56px);
       }
+      .lidera-page #services .lidera-pillars,
+      .lidera-page #results .lidera-results {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .lidera-page #about .lidera-photo { justify-self: end; }
     }
   </style>
 </head>
-
-<body>
+<body class="lidera-page">
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <a href="https://www.lideramgmt.com/">
-          Lidera Management Services, LLC
-        </a>
-      </div>
-
+      <div class="brand"><a href="https://www.lideramgmt.com/">Lidera Management Services, LLC</a></div>
       <nav class="nav" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#about">About</a>
@@ -127,416 +68,118 @@
   </header>
 
   <main>
-
-    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container grid-2">
         <div>
-          <p class="section-kicker">
-            Fractional executive leadership • Business improvement • AI implementation
-          </p>
-
-          <h1 id="hero-title">
-            Experienced leadership. Measurable progress.
-          </h1>
-
-          <p class="lead">
-            Lidera helps business leaders solve problems that are holding
-            back growth, profitability, or execution.
-          </p>
-
-          <p>
-            We bring hands-on executive leadership and practical AI
-            workflows to help your business work better. That may mean
-            rebuilding a team, improving product and pricing decisions,
-            leading a business transition, or implementing automation that
-            gives people more time for higher-value work.
-          </p>
-
-          <p>
-            We identify what is blocking progress, align the right people,
-            and turn priorities into measurable action.
-          </p>
-
+          <p class="section-kicker">Fractional executive leadership • Business improvement • AI implementation</p>
+          <h1 id="hero-title">Experienced leadership. Measurable progress.</h1>
+          <p class="lead">Lidera helps business leaders solve problems that are holding back growth, profitability, or execution.</p>
+          <p>We bring hands-on leadership to business transitions, product and pricing decisions, and teams that need to get back on track. We also build and implement AI workflows that reduce manual work and give teams more time for higher-value decisions.</p>
           <div class="cta-group">
-            <a href="#contact" class="btn btn-primary">
-              Let’s Talk About Your Business
-            </a>
-            <a href="#services" class="btn btn-secondary">
-              Explore Services
-            </a>
+            <a href="#contact" class="btn btn-primary">Let’s Talk About Your Business</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
           </div>
         </div>
-
         <div class="hero-accent" aria-hidden="true">
-          <img
-            src="assets/Logo%20-%20Lidera.png"
-            alt=""
-            class="hero-logo"
-          >
+          <img src="assets/Logo%20-%20Lidera.png" alt="" class="hero-logo">
         </div>
       </div>
     </section>
 
-    <!-- Four Service Pillars -->
-    <section
-      id="services"
-      class="section"
-      aria-labelledby="services-title"
-    >
+    <section id="services" class="section" aria-labelledby="services-title">
       <div class="container">
-        <h2 id="services-title" class="section-title">
-          Four Ways Lidera Moves Your Business Forward
-        </h2>
-
-        <p class="section-kicker">
-          Focused advisory, fractional leadership, and hands-on
-          implementation built around your business priorities.
-        </p>
-
+        <h2 id="services-title" class="section-title">Where Lidera Can Help</h2>
         <div class="lidera-pillars">
-
-          <!-- Pillar 1 -->
           <article class="card">
             <h3>AI Workflows &amp; Implementation</h3>
-
-            <p>
-              Turn AI interest into practical ways of working. We help
-              identify useful applications, build workflows, and support
-              implementation so the tools become part of everyday operations.
-            </p>
-
-            <ul>
-              <li>
-                Identify repetitive tasks and prioritize opportunities
-                for AI and automation
-              </li>
-              <li>
-                Build workflows for research, reporting, meeting follow-up,
-                and business development
-              </li>
-              <li>
-                Connect workflow design with implementation, testing,
-                and clear ownership
-              </li>
-              <li>
-                Help teams adopt new tools with practical guidance,
-                human review, and appropriate data handling
-              </li>
-              <li>
-                Measure time saved, output quality, and business impact
-              </li>
-            </ul>
+            <p>We build and implement AI workflows that cut manual work in reporting, research, and follow-up. We help your team adopt them and measure the time saved.</p>
           </article>
-
-          <!-- Pillar 2 -->
           <article class="card">
             <h3>Growth &amp; Profitability</h3>
-
-            <p>
-              Focus your people and investment on the products, customers,
-              and opportunities that create the most value.
-            </p>
-
-            <ul>
-              <li>Product and portfolio strategy</li>
-              <li>Pricing and profitability improvement</li>
-              <li>Portfolio rationalization and investment priorities</li>
-              <li>Customer diversification and go-to-market planning</li>
-              <li>
-                Translate growth priorities into clear plans,
-                ownership, and performance measures
-              </li>
-            </ul>
+            <p>We help you decide where to invest, what to price differently, and which products and customers offer the strongest path to profitable growth.</p>
           </article>
-
-          <!-- Pillar 3 -->
           <article class="card">
             <h3>Business Transitions &amp; Execution Recovery</h3>
-
-            <p>
-              Keep critical work moving through separations, integrations,
-              and performance challenges. We bring structure, visibility,
-              and leadership when the business needs progress.
-            </p>
-
-            <ul>
-              <li>Carve-out, integration, and Day 1 readiness</li>
-              <li>Transition service agreement planning and governance</li>
-              <li>PMO creation, turnaround, and launch readiness</li>
-              <li>Recovery of stalled or underperforming initiatives</li>
-              <li>
-                Cross-functional coordination to address inventory,
-                capacity, and delivery challenges
-              </li>
-            </ul>
+            <p>We lead carve-outs and integrations, get stalled programs back on track, and help teams resolve launch, capacity, and delivery problems.</p>
           </article>
-
-          <!-- Pillar 4 -->
           <article class="card">
             <h3>Fractional Leadership &amp; Team Development</h3>
-
-            <p>
-              Add experienced leadership while building the structure,
-              capability, and accountability your team needs to succeed.
-            </p>
-
-            <ul>
-              <li>
-                Fractional and interim executive leadership for growth,
-                change, or leadership gaps
-              </li>
-              <li>
-                Build or reshape product management, engineering,
-                and PMO organizations
-              </li>
-              <li>Clarify roles, responsibilities, and decision authority</li>
-              <li>
-                Strengthen collaboration across commercial, technical,
-                operational, and finance teams
-              </li>
-              <li>
-                Coach leaders and support teams through changes
-                in tools, processes, and expectations
-              </li>
-            </ul>
+            <p>We step in when you need experienced leadership, then help build stronger teams with clear roles, priorities, and ownership.</p>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- Background with Photo on the Right -->
-    <section
-      id="about"
-      class="section section-alt"
-      aria-labelledby="about-title"
-    >
+    <section id="about" class="section section-alt" aria-labelledby="about-title">
       <div class="container lidera-about">
         <div>
-          <p class="section-kicker">
-            Improve performance • Build stronger teams • Execute change
-          </p>
-
-          <h2 id="about-title">
-            Executive experience. Hands-on support.
-          </h2>
-
-          <p>
-            I’m Melissa Lindquist, founder of Lidera Management Services.
-            Over 25 years, I’ve led global teams across industrial,
-            technology, and consumer businesses, connecting commercial,
-            engineering, operations, and finance to solve problems
-            and deliver results.
-          </p>
-
-          <p>
-            My experience includes product leadership across a portfolio
-            with more than $800 million in revenue, building product
-            management and PMO functions, leading engineering teams,
-            and owning enterprise readiness for a business carve-out.
-            My career spans GHSP, Stoneridge, Harman, Whirlpool,
-            Sullair, and Bosch.
-          </p>
-
-          <p>
-            Through Lidera, I bring that experience directly to your
-            business. I work alongside your team to understand the
-            problem, make decisions, and move the work forward.
-            I also help translate AI and automation into practical
-            workflows that support your people and business priorities.
-          </p>
-
-          <p>
-            The goal is simple: stronger teams, better execution,
-            and measurable progress.
-          </p>
-
-          <a
-            href="https://www.linkedin.com/in/melissalindquist"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Connect with me on LinkedIn
-          </a>
+          <p class="section-kicker">Improve performance • Build stronger teams • Execute change</p>
+          <h2 id="about-title">Executive experience. Hands-on support.</h2>
+          <p>I’m Melissa Lindquist, founder of Lidera Management Services. Over 25 years, I’ve led global teams across industrial, technology, and consumer businesses, bringing commercial, engineering, operations, and finance teams together to solve problems.</p>
+          <p>My experience includes leading product management for a portfolio with more than $800 million in revenue, building product management and program management offices, leading engineering teams, and owning enterprise readiness for a business carve-out. My career spans GHSP, Stoneridge, Harman, Whirlpool, Sullair, and Bosch.</p>
+          <p>Through Lidera, I work alongside your team to identify what’s blocking progress, make decisions, and put the plan into practice. That includes helping teams turn AI and automation into tools they can use in their daily work.</p>
+          <a href="https://www.linkedin.com/in/melissalindquist" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a>
         </div>
-
         <figure class="lidera-photo">
-          <!-- Upload your photo to assets using this exact filename. -->
-          <img
-            src="assets/melissa-lindquist.png"
-            alt="Melissa Lindquist, founder of Lidera Management Services"
-            loading="lazy"
-            decoding="async"
-          >
-          <figcaption>
-            <strong>Melissa Lindquist</strong><br>
-            Founder, Lidera Management Services
-          </figcaption>
+          <img src="assets/melissa-lindquist.png" alt="Melissa Lindquist, founder of Lidera Management Services" loading="lazy" decoding="async">
+          <figcaption><strong>Melissa Lindquist</strong><br>Founder, Lidera Management Services</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Experience and Results -->
-    <section
-      id="results"
-      class="section"
-      aria-labelledby="results-title"
-    >
+    <section id="results" class="section" aria-labelledby="results-title">
       <div class="container">
-        <h2 id="results-title" class="section-title">
-          Experience Behind the Work
-        </h2>
-
-        <p class="section-kicker">
-          Selected results from Melissa’s corporate leadership career.
-        </p>
-
+        <h2 id="results-title" class="section-title">Experience Behind the Work</h2>
+        <p class="section-kicker">Selected results from Melissa’s corporate leadership career.</p>
         <div class="lidera-results">
           <article class="card">
             <h3>5× profitability improvement</h3>
-            <p>
-              Led product management at Stoneridge, with a fivefold
-              profitability improvement and 25% sales growth across
-              growth product lines.
-            </p>
+            <p>Led product management at Stoneridge, where growth product lines achieved fivefold profitability improvement and 25% sales growth.</p>
           </article>
-
           <article class="card">
-            <h3>15% to 90% on-time gate reviews</h3>
-            <p>
-              Introduced a structured launch review process at Harman
-              across more than 65 annual programs. The approach was
-              subsequently replicated in Europe and China.
-            </p>
+            <h3>15% to 90% on-time launch reviews</h3>
+            <p>Introduced a structured launch review process at Harman across more than 65 annual programs. Europe and China later adopted the approach.</p>
           </article>
-
           <article class="card">
             <h3>$6 million inventory reduction</h3>
-            <p>
-              Aligned commercial and operational teams to reduce stagnant
-              fleet retrofit inventory by $6 million in six months
-              at Stoneridge.
-            </p>
+            <p>Aligned commercial and operational teams to reduce stagnant fleet retrofit inventory by $6 million in six months at Stoneridge.</p>
           </article>
-
           <article class="card">
             <h3>New offering launched in six months</h3>
-            <p>
-              Led the launch of a remanufacturing offering at Sullair,
-              bringing the first unit to completion within six months.
-            </p>
+            <p>Led the launch of a remanufacturing offering at Sullair, bringing the first unit to completion within six months.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Approach -->
-    <section
-      class="section section-alt"
-      aria-labelledby="approach-title"
-    >
+    <section class="section section-alt" aria-labelledby="approach-title">
       <div class="container narrow">
-        <h2 id="approach-title">
-          Start with the business need. Follow through on implementation.
-        </h2>
-
-        <p>
-          We start by understanding what is getting in the way,
-          what you have already tried, and what success needs to
-          look like. Then we agree on the priorities, the right
-          level of support, and how progress will be measured.
-        </p>
-
-        <p>
-          That may mean implementing an AI workflow, taking ownership
-          of a critical initiative, or providing ongoing fractional
-          leadership. We work with your team to test the approach,
-          resolve issues, and establish a way of working that
-          can continue as the business grows.
-        </p>
+        <h2 id="approach-title">Start with the business need. Follow through on implementation.</h2>
+        <p>We agree on what success looks like and how to measure it. Then we work alongside your team to implement an AI workflow, take ownership of a critical initiative, or provide ongoing fractional leadership.</p>
       </div>
     </section>
 
-    <!-- Contact and Calendly -->
-    <section
-      id="contact"
-      class="section"
-      aria-labelledby="contact-title"
-    >
+    <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container">
         <div class="lidera-contact">
-          <h2 id="contact-title">
-            Let’s talk about what your business needs next.
-          </h2>
-
-          <p>
-            Whether you’re exploring AI, working through a business
-            transition, or need experienced leadership to improve
-            performance, let’s start with a conversation.
-          </p>
-
-          <p>
-            Schedule a 30-minute introduction to share your priorities
-            and explore where Lidera could help.
-          </p>
-
+          <h2 id="contact-title">Let’s talk about what your business needs next.</h2>
+          <p>Schedule a 30-minute introduction to share your priorities and see where Lidera could help.</p>
           <div class="cta-group">
-            <a
-              href="https://calendly.com/melissa-lindquist-lideramgmt/30min"
-              class="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Schedule a 30-Minute Intro
-            </a>
-
-            <a
-              href="mailto:melissa.lindquist@lideramgmt.com?subject=Lidera%20Inquiry"
-              class="btn btn-secondary"
-            >
-              Send Melissa an Email
-            </a>
+            <a href="https://calendly.com/melissa-lindquist-lideramgmt/30min" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Schedule a 30-Minute Intro</a>
+            <a href="mailto:melissa.lindquist@lideramgmt.com?subject=Lidera%20Inquiry" class="btn btn-secondary">Email Melissa</a>
           </div>
-
           <ul class="contact-list">
-            <li>
-              Email:
-              <a href="mailto:melissa.lindquist@lideramgmt.com">
-                melissa.lindquist@lideramgmt.com
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/melissalindquist"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Connect with Melissa on LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/lidera-management-services-llc"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Follow Lidera on LinkedIn
-              </a>
-            </li>
+            <li><a href="mailto:melissa.lindquist@lideramgmt.com">melissa.lindquist@lideramgmt.com</a></li>
+            <li><a href="https://www.linkedin.com/company/lidera-management-services-llc" target="_blank" rel="noopener noreferrer">Follow Lidera on LinkedIn</a></li>
           </ul>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        © 2026 Lidera Management Services, LLC. All rights reserved.
-      </div>
-
+      <div>© 2026 Lidera Management Services, LLC. All rights reserved.</div>
       <nav class="foot-nav" aria-label="Footer navigation">
         <a href="#services">Services</a>
         <a href="#about">About</a>
